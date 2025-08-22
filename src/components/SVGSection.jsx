@@ -13,33 +13,33 @@ function SVGSection() {
                     x1="380" y1="115" x2="700" y2="115"
                     stroke="black" strokeWidth="3" strokeDasharray="3 3" strokeDashoffset="5"
                     initial={{ strokeDashoffset: 100, strokeOpacity: 0 }}
-                    animate={{ strokeDashoffset: 0, strokeOpacity: 1 }}
+                    whileInView={{ strokeDashoffset: 0, strokeOpacity: 1 }}
                     transition={{ duration: 2, ease: "linear", delay: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.8 }}
                 />
 
                 <motion.line
                     x1="540" y1="305" x2="700" y2="305"
                     stroke="black" strokeWidth="3" strokeDasharray="3 3" strokeDashoffset="5"
                     initial={{ strokeDashoffset: 100, strokeOpacity: 0 }}
-                    animate={{ strokeDashoffset: 0, strokeOpacity: 1 }}
+                    whileInView={{ strokeDashoffset: 0, strokeOpacity: 1 }}
                     transition={{ duration: 2, ease: "linear", delay: 3 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.8 }}
                 />
                 <motion.line
                     x1="380" y1="495" x2="700" y2="495"
                     stroke="black" strokeWidth="3" strokeDasharray="3 3" strokeDashoffset="5"
                     initial={{ strokeDashoffset: 100, strokeOpacity: 0 }}
-                    animate={{ strokeDashoffset: 0, strokeOpacity: 1 }}
+                    whileInView={{ strokeDashoffset: 0, strokeOpacity: 1 }}
                     transition={{ duration: 2, ease: "linear", delay: 5 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.8 }}
                 />
                 <foreignObject x="750" y="30" width="550" height="400">
                     <motion.div
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 2, ease: "linear", delay: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.8 }}
                     >
                         <Box>
                             <Typography fontWeight={700} >Lorem ipsum dolor</Typography>
@@ -54,9 +54,9 @@ function SVGSection() {
                 <foreignObject x="750" y="230" width="550" height="400">
                     <motion.div
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 2, ease: "linear", delay: 3 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.8 }}
                     >
                         <Box>
                             <Typography fontWeight={700} >Lorem ipsum dolor</Typography>
@@ -71,9 +71,9 @@ function SVGSection() {
                 <foreignObject x="750" y="450" width="550" height="400">
                     <motion.div
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 2, ease: "linear", delay: 5 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.8 }}
                     >
                         <Box>
                             <Typography fontWeight={700} >Lorem ipsum dolor</Typography>
@@ -88,14 +88,14 @@ function SVGSection() {
                 <motion.path d="M492.806 300.91C492.806 407.086 402.81 493.126 291.801 493.126" stroke="#0071CE" strokeWidth="10"
                     initial={{ pathLength: 0 }}
                     whileInView={{ pathLength: 1 }}
-                    transition={{ duration: 2, delay: 3 }}
-                    viewport={{ once: true }}
+                    transition={{ duration: 3, delay: 3 }}
+                    viewport={{ once: true, amount: 0.8 }}
                 />
                 <motion.path d="M291.801 108.694 C402.81 108.694 492.806 194.733 492.806 300.91" stroke="#0071CE" strokeWidth="10"
                     initial={{ pathLength: 0 }}
                     whileInView={{ pathLength: 1 }}
-                    transition={{ duration: 2, delay: 1 }}
-                    viewport={{ once: true }}
+                    transition={{ duration: 3, delay: 1 }}
+                    viewport={{ once: true, amount: 0.8 }}
                 />
                 <path d="M291.23 139.014C305.737 139.014 317.497 127.232 317.497 112.698C317.497 98.1647 305.737 86.3829 291.23 86.3829C276.722 86.3829 264.962 98.1647 264.962 112.698C264.962 127.232 276.722 139.014 291.23 139.014Z" fill="#0071CE" stroke="#0071CE" strokeWidth="3" />
                 <path d="M290.316 124.712V107.206L286.319 108.236V104.804L292.143 102.286H294.77V124.712H290.316Z" fill="white" />
