@@ -1,0 +1,49 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slider {
+      overflow: hidden !important;
+    }
+.slick-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.slick-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.slick-dots li
+{
+    margin: 0 2px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;         
+  color: white !important;           
+  opacity: 1 !important;             
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0071ce !important;          
+}
+
+.slick-dots li button:hover:before {
+  color: #0071ce !important;             
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;    
+}
+
